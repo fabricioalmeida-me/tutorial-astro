@@ -1,5 +1,9 @@
 ---
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
 import '../style/global.css';
+
+const pageTigle = "Home Page";
 ---
 
 <html lang="en">
@@ -11,11 +15,11 @@ import '../style/global.css';
 		<title>Astro</title>
 	</head>
 	<body>
-		<a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
-		
+		<Navigation/>
 		<h1>Astro</h1>
-		<h1>My astro site</h1>
+		<Footer/>
+		<script>
+			import "../script/menu.js";
+		</script>
 	</body>
 </html>
