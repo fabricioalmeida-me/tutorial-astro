@@ -1,30 +1,14 @@
 ---
-import Navigation from '../components/Navigation.astro';
-import Footer from '../components/Footer.astro';
-import '../style/global.css';
+import BaseLayout from '../layouts/BaseLayout.astro';
+const pageTigle = "Blog";
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title>Blog</title>
-  </head>
-  <>
-		<Navigation/>
-    
-    <h1>My Astro Site</h1>
-    <h1>My Astro learning Blog</h1>
-    <p>This is where I will post about my journey learning Astro</p>
-    <ul>
-      <li><a href="/posts/post-1/">Post 1</a></li>
-      <li><a href="/posts/post-2/">Post 2</a></li>
-      <li><a href="/posts/post-3/">Post 3</a></li>
-    </ul>
-    <Footer/>
-    <script>
-			import "../script/menu.js";
-		</script>
-  </body>
-</html>
+<BaseLayout pageTitle={pageTigle}>
+  <h1>My Astro learning Blog</h1>
+  <p>This is where I will post about my journey learning Astro</p>
+  <ul>
+    <li><a href="/posts/post-1/">Post 1</a></li>
+    <li><a href="/posts/post-2/">Post 2</a></li>
+    <li><a href="/posts/post-3/">Post 3</a></li>
+  </ul>
+</BaseLayout>
