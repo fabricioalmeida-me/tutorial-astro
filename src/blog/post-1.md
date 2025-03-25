@@ -1,5 +1,4 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: My First Blog Post
 author: Fabrício
 pubDate: 2024-03-21
